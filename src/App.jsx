@@ -221,6 +221,7 @@ function App() {
           >
             <Button 
               className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black hover:from-yellow-500 hover:to-orange-600 font-semibold"
+              onClick={() => window.open('https://pump.fun/coin/GuLHswrk82GcpBdEBmtihdEw749XyGJgRLHPcTtSpump', '_blank')}
             >
               Buy $AURA
             </Button>
@@ -254,6 +255,7 @@ function App() {
                 ))}
                 <Button 
                   className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black hover:from-yellow-500 hover:to-orange-600 font-semibold mt-4"
+                  onClick={() => window.open('https://pump.fun/coin/GuLHswrk82GcpBdEBmtihdEw749XyGJgRLHPcTtSpump', '_blank')}
                 >
                   Buy $AURA
                 </Button>
@@ -320,6 +322,7 @@ function App() {
                 <Button 
                   size="lg" 
                   className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black hover:from-yellow-500 hover:to-orange-600 font-bold tracking-wide px-12 py-6 text-lg shadow-lg shadow-yellow-500/25"
+                  onClick={() => window.open('https://pump.fun/coin/GuLHswrk82GcpBdEBmtihdEw749XyGJgRLHPcTtSpump', '_blank')}
                 >
                   Acquire $AURA
                   <ArrowRight className="ml-3 w-5 h-5" />
@@ -334,6 +337,7 @@ function App() {
                   size="lg" 
                   variant="outline" 
                   className="border-yellow-400/30 text-yellow-400 hover:bg-yellow-400/10 hover:border-yellow-400/50 font-light tracking-wide px-12 py-6 text-lg"
+                  onClick={() => window.open('https://x.com/Auraboyssol', '_blank')}
                 >
                   Join Community
                 </Button>
