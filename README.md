@@ -90,7 +90,7 @@ I am the infinite aura.
 
 Update contract address in `src/App.jsx`:
 ```javascript
-const contractAddress = "YOUR_CONTRACT_ADDRESS_HERE"
+const contractAddress = "GuLHswrk82GcpBdEBmtihdEw749XyGJgRLHPcTtSpump"
 ```
 
 ## 📄 License

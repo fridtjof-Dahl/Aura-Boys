@@ -38,7 +38,7 @@ function App() {
   const { scrollYProgress } = useScroll()
 
   // Contract address
-  const contractAddress = "0x1234567890abcdef1234567890abcdef12345678"
+  const contractAddress = "GuLHswrk82GcpBdEBmtihdEw749XyGJgRLHPcTtSpump"
 
   // Mouse tracking for aura effect
   useEffect(() => {
@@ -732,25 +732,25 @@ function App() {
                 phase: "Phase 1",
                 title: "Genesis",
                 status: "completed",
-                items: ["Launch on Pump.fun", "Build core community", "Establish aura practices", "Initial liquidity"]
+                items: ["Launch on Pump.fun", "Build core community", "Establish aura practices"]
               },
               {
                 phase: "Phase 2", 
                 title: "Expansion",
                 status: "current",
-                items: ["CEX listings", "Mantra app development", "Influencer partnerships", "Community growth"]
+                items: ["CEX listings", "Influencer partnerships", "Community growth"]
               },
               {
                 phase: "Phase 3",
                 title: "Domination",
                 status: "upcoming",
-                items: ["Major exchange listings", "Aura meditation platform", "NFT collection", "Global awareness"]
+                items: ["Major exchange listings", "Aura meditation platform", "Global awareness"]
               },
               {
                 phase: "Phase 4",
                 title: "Infinite",
                 status: "upcoming", 
-                items: ["Metaverse integration", "Aura energy marketplace", "Cosmic partnerships", "Universal adoption"]
+                items: ["Aura energy marketplace", "Cosmic partnerships", "Universal adoption"]
               }
             ].map((roadmapItem, index) => (
               <motion.div
@@ -824,7 +824,7 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, delay: 0.3 }}
             viewport={{ once: true }}
-            className="grid md:grid-cols-3 gap-6 mb-16"
+            className="grid md:grid-cols-2 gap-6 mb-16"
           >
             {[
               {
@@ -832,21 +832,16 @@ function App() {
                 title: "Twitter",
                 description: "Follow our cosmic journey",
                 members: "50K+ Followers",
-                color: "from-blue-400 to-blue-600"
+                color: "from-blue-400 to-blue-600",
+                url: "https://x.com/Auraboyssol"
               },
               {
                 icon: MessageCircle,
                 title: "Telegram",
                 description: "Join the aura discussion",
                 members: "25K+ Members",
-                color: "from-blue-500 to-cyan-500"
-              },
-              {
-                icon: Globe,
-                title: "Discord",
-                description: "Practice with the community",
-                members: "15K+ Members",
-                color: "from-purple-500 to-indigo-500"
+                color: "from-blue-500 to-cyan-500",
+                url: "#"
               }
             ].map((social, index) => (
               <motion.div
@@ -881,6 +876,7 @@ function App() {
                       variant="outline" 
                       size="sm" 
                       className="border-yellow-400/30 text-yellow-400 hover:bg-yellow-400/10 hover:border-yellow-400/50 w-full"
+                      onClick={() => window.open(social.url, '_blank')}
                     >
                       Join Now
                       <ExternalLink className="ml-2 w-4 h-4" />
