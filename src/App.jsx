@@ -52,15 +52,15 @@ function App() {
     return () => window.removeEventListener('mousemove', handleMouseMove)
   }, [])
 
-  // Price simulation
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const change = (Math.random() - 0.5) * 0.000005
-      setCurrentPrice(prev => Math.max(0, prev + change))
-      setPriceChange(prev => prev + (Math.random() - 0.5) * 0.5)
-    }, 5000)
-    return () => clearInterval(interval)
-  }, [])
+  // Price simulation - Disabled until API integration
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     const change = (Math.random() - 0.5) * 0.000005
+  //     setCurrentPrice(prev => Math.max(0, prev + change))
+  //     setPriceChange(prev => prev + (Math.random() - 0.5) * 0.5)
+  //   }, 5000)
+  //   return () => clearInterval(interval)
+  // }, [])
 
   const copyToClipboard = async (text) => {
     try {
@@ -310,7 +310,7 @@ function App() {
 
             {/* CTA Buttons */}
             <motion.div 
-              className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
+              className="flex flex-col sm:flex-row gap-6 justify-center items-center"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 2, delay: 2 }}
@@ -344,8 +344,8 @@ function App() {
               </motion.div>
             </motion.div>
 
-            {/* Price Display */}
-            <motion.div 
+            {/* Price Display - Hidden until API integration */}
+            {/* <motion.div 
               className="inline-block bg-black/40 backdrop-blur-xl rounded-2xl p-8 border border-yellow-500/20 shadow-lg shadow-yellow-500/10"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -381,7 +381,7 @@ function App() {
                   </motion.p>
                 </div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </div>
 
