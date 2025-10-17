@@ -156,7 +156,7 @@ function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
-            onClick={() => window.open('https://pump.fun/coin/GuLHswrk82GcpBdEBmtihdEw749XyGJgRLHPcTtSpump', '_blank')}
+            onClick={() => window.open('https://aura-boys.vercel.app/', '_blank')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
