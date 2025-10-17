@@ -152,10 +152,13 @@ function App() {
       <nav className="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-2xl border-b border-yellow-500/10">
         <div className="container mx-auto px-6 py-6 flex justify-between items-center">
           <motion.div 
-            className="flex items-center space-x-4"
+            className="flex items-center space-x-4 cursor-pointer"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
+            onClick={() => window.open('https://pump.fun/coin/GuLHswrk82GcpBdEBmtihdEw749XyGJgRLHPcTtSpump', '_blank')}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             <div className="relative">
               <div className="w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center">
